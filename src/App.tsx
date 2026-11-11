@@ -26,7 +26,7 @@ export default function App() {
         </a>
       </header>
 
-      {/* FULL-BLEED ARCHITECTURAL HERO (ZERO ITALIC SLOP, ZERO PILL BARS) */}
+      {/* FULL-BLEED ARCHITECTURAL HERO (RESTRAINED SWISS GEOMETRY) */}
       <header id="top" className="hero-fullbleed">
         <img
           src="/references/sites/site-3-valkyr.jpg"
@@ -92,16 +92,16 @@ export default function App() {
                   <td className="spec-value">{activeTab}</td>
                 </tr>
                 <tr>
-                  <td className="spec-label">EFFICIENCY FACTOR</td>
-                  <td className="spec-value">{(0.91 + (metricValue / 1000)).toFixed(3)} η</td>
+                  <td className="spec-label">SPECIFIC IMPULSE (ISP)</td>
+                  <td className="spec-value">{(2850 + metricValue * 15).toFixed(0)} SEC</td>
                 </tr>
                 <tr>
-                  <td className="spec-label">THERMAL DISSIPATION</td>
-                  <td className="spec-value">{(24 + (metricValue * 0.4)).toFixed(1)} °C</td>
+                  <td className="spec-label">THRUST OUTPUT</td>
+                  <td className="spec-value">{(180 + metricValue * 1.8).toFixed(1)} mN</td>
                 </tr>
                 <tr>
-                  <td className="spec-label">STATUS PROTOCOL</td>
-                  <td className="spec-value" style={{ color: 'var(--accent-color)' }}>VERIFIED · ZERO TOLERANCE</td>
+                  <td className="spec-label">FLIGHT QUALIFICATION</td>
+                  <td className="spec-value" style={{ color: 'var(--accent-color)' }}>AIAA / NASA-STD-5001 CERTIFIED</td>
                 </tr>
               </tbody>
             </table>
